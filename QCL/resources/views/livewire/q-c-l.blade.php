@@ -6,6 +6,8 @@
     <br>
 
     @if(!$verses)
+    <label class='h3'>أختر عدد الايات </label>
+    <br>
     <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
         <div class="btn-group" role="group" aria-label="First group">
             <button wire:click="getAyat(3)" type="button" class="btn btn-secondary">3</button>
@@ -24,9 +26,9 @@
             <p class="card-text text-dark h2">{{$verses}}</p>
         </div>
     </div>
+    <button wire:click="resetVers" type="button" class="btn btn-secondary">اعادة</button>
     @endif
 
-    <button wire:click="resetVers" type="button" class="btn btn-secondary">اعادة</button>
 
 
 </div>
