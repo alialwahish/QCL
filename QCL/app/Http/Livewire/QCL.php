@@ -26,8 +26,10 @@ class QCL extends Component
 
 
 
-
-        $this->verses.=json_decode($response->body())->text.'{#}';
+        if($i==$numAyat)
+            $this->verses.=json_decode($response->body())->text;
+        else
+            $this->verses.=json_decode($response->body())->text.'{#}';
         }
 
 
