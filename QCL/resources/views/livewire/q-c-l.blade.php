@@ -5,6 +5,7 @@
     <br>
     <br>
 
+    @if(!$verses)
     <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
         <div class="btn-group" role="group" aria-label="First group">
             <button wire:click="getAyat(3)" type="button" class="btn btn-secondary">3</button>
@@ -15,7 +16,7 @@
     <br>
 
     <br><br>
-    @if($verses)
+    @else
     <div class="card border-primary mb-3 ">
         <div class="card-header">الايات</div>
         <div class="card-body text-primary">

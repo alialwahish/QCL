@@ -10,7 +10,6 @@ class QCL extends Component
     public $verses = '';
     public function render()
     {
-        $this->suraLength(2);
         return view('livewire.q-c-l');
     }
 
