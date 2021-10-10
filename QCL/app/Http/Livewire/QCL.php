@@ -26,7 +26,9 @@ class QCL extends Component
         $response = Http::get('http://api.quran-tafseer.com/quran/' . $sura . '/'.$aya );
 
 
-        $this->verses.=json_decode($response->body())->text.'@&@';
+
+
+        $this->verses.=json_decode($response->body())->text.'{#}';
         }
 
 

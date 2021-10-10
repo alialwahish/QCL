@@ -1,7 +1,7 @@
 <div class="container text-center">
     <br><br>
     <h1>قُرْآنٌ يكملُ بعضهُ بعضاً</h1>
-    <small>ٌ موقع يختار عدد من ايات من القران (من مجموعة سور) ويعرضها سوية, احدى معجزات القران انه يكمل بعضه بعضا. </small>
+    <small>ٌ موقع يختار عدد من ايات من القران (من مجموعة سور) ويعرضها سوية, احدى معجزات القران انه يكمل بعضه بعضا </small>
     <br>
     <br>
 
@@ -14,7 +14,6 @@
     </div>
     <br>
 
-    <button wire:click="resetVers" type="button" class="btn btn-secondary">reset</button>
     <br><br>
     @if($verses)
     <div class="card border-primary mb-3 ">
@@ -25,5 +24,8 @@
         </div>
     </div>
     @endif
+
+    <button wire:click="resetVers" type="button" class="btn btn-secondary">اعادة</button>
+
 
 </div>
